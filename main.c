@@ -4,20 +4,26 @@
 
 int main(int argc, char *argv[])
 {
-  
-int m,n,d;
-scanf("%d",&m);
-scanf("%d",&n); 
-if(m<n)printf("n%d",m-n);
-if(m>n)
+int n[5];  
+int sum=0,i,m;
+for (i=0;i<4;i++)
 {
-  
-  printf("y");
-         
+    scanf("%d",&n[i]);
+    sum+=n[i];
 }
-printf("abc");
+printf("Á`¦@%d\n",sum);
+scanf("%d",&m);
 
-  
+if(m>sum) 
+      {     
+      printf("y");
+      }
+
+else
+      {   
+      printf("n%d",sum-m);
+      }
+
   
   
   
